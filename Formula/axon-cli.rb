@@ -5,20 +5,20 @@
 class AxonCli < Formula
   desc "Axon CLI tools"
   homepage "https://github.com/kamusis/axon-cli"
-  version "0.3.9"
+  version "0.4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kamusis/axon-cli/releases/download/v0.3.9/axon_0.3.9_darwin_amd64.tar.gz"
-      sha256 "53466ca157706fd79d5dc07433cc4aa092fd3681ce1852c5f08f010862cbd23c"
+      url "https://github.com/kamusis/axon-cli/releases/download/v0.4.0/axon_0.4.0_darwin_amd64.tar.gz"
+      sha256 "015ee2f94f75caf803544501a6785e7e10a1a62fea7639f0291322a96b6a8a69"
 
       define_method(:install) do
         bin.install "axon"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kamusis/axon-cli/releases/download/v0.3.9/axon_0.3.9_darwin_arm64.tar.gz"
-      sha256 "8dba5ccfdf057f3662336b34d97e7c62c145683abe9b04e2e5842486fe13ed13"
+      url "https://github.com/kamusis/axon-cli/releases/download/v0.4.0/axon_0.4.0_darwin_arm64.tar.gz"
+      sha256 "046b05d36588912e15926e75a740d39499862624a1dafca3f372659e9d0894fa"
 
       define_method(:install) do
         bin.install "axon"
@@ -28,15 +28,15 @@ class AxonCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kamusis/axon-cli/releases/download/v0.3.9/axon_0.3.9_linux_amd64.tar.gz"
-      sha256 "db9c4ffdd2b4593f488ecef5adf024cd87f5d9167e884c68cae28d18d6a046e3"
+      url "https://github.com/kamusis/axon-cli/releases/download/v0.4.0/axon_0.4.0_linux_amd64.tar.gz"
+      sha256 "4489b2cbfcae812b5b5c3686524a3bc27b363fc2fe31c7aaf3e6b731d70b13e0"
       define_method(:install) do
         bin.install "axon"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kamusis/axon-cli/releases/download/v0.3.9/axon_0.3.9_linux_arm64.tar.gz"
-      sha256 "3aa36319bf740b852bc08f51dbdd7e9c92c2734121909dec6d5f401cccaa9dc5"
+      url "https://github.com/kamusis/axon-cli/releases/download/v0.4.0/axon_0.4.0_linux_arm64.tar.gz"
+      sha256 "134b6a46527faf87046131ca9804bbef45d09b26bbe655542b50dcfbc00e740f"
       define_method(:install) do
         bin.install "axon"
       end
