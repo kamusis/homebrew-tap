@@ -5,20 +5,20 @@
 class AxonCli < Formula
   desc "Axon CLI tools"
   homepage "https://github.com/kamusis/axon-cli"
-  version "0.3.12"
+  version "0.3.13"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kamusis/axon-cli/releases/download/v0.3.12/axon_0.3.12_darwin_amd64.tar.gz"
-      sha256 "6c46fc0766a4cfb959da955b83cdef8da1050c7779371cce77c39a563bfab366"
+      url "https://github.com/kamusis/axon-cli/releases/download/v0.3.13/axon_0.3.13_darwin_amd64.tar.gz"
+      sha256 "428c8ec1c5f91f43e1e87677c198fb5918836e35ee2ebcb8536241b41f766049"
 
       define_method(:install) do
         bin.install "axon"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kamusis/axon-cli/releases/download/v0.3.12/axon_0.3.12_darwin_arm64.tar.gz"
-      sha256 "b885ae22b8edbf070db0411cf129f1e8c7a3c0bd7638ba79b1df394d16f42f4a"
+      url "https://github.com/kamusis/axon-cli/releases/download/v0.3.13/axon_0.3.13_darwin_arm64.tar.gz"
+      sha256 "fe76fb1e27b17122262832b7662ecfca072535fd639fefc674b2e8d0e8ef3d27"
 
       define_method(:install) do
         bin.install "axon"
@@ -28,15 +28,15 @@ class AxonCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kamusis/axon-cli/releases/download/v0.3.12/axon_0.3.12_linux_amd64.tar.gz"
-      sha256 "d58fa72352dbb0a15e7f30970ab22f06bc0928cb82f8f7c1db03167a5cad887d"
+      url "https://github.com/kamusis/axon-cli/releases/download/v0.3.13/axon_0.3.13_linux_amd64.tar.gz"
+      sha256 "627e71149a95ffdb2716ad80eea7c3306b47b35de5b3dfcb77de17394043c251"
       define_method(:install) do
         bin.install "axon"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kamusis/axon-cli/releases/download/v0.3.12/axon_0.3.12_linux_arm64.tar.gz"
-      sha256 "12fd95a5527f4187e8caa7f59f96ca96e5c23b979f86cde6461e79ddd22a6c78"
+      url "https://github.com/kamusis/axon-cli/releases/download/v0.3.13/axon_0.3.13_linux_arm64.tar.gz"
+      sha256 "3cc2d4d3dfc8e74f1758bd5f3bb83c3113669e252439f9b8b21707c87f6caf73"
       define_method(:install) do
         bin.install "axon"
       end
